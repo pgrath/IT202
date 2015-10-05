@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<style>
+fieldset {width: 60%; margin: auto; }
+
+label { float: left; width: 7em; background: yellow;}
+
+input {color: red;}
+</style>
+
+<link rel="stylesheet" href="x.css">
+<html>
+
+<script>
+function See(){
+
+	if (document.getElementById("checkbox").checked){
+	document.getElementById("password").type = "text";
+	}
+	
+	if (!document.getElementById("checkbox").checked){
+	document.getElementById("password").type = "password";
+	}
+}
+
+</script>
+
+
+<form action = "xretrive.php" >
+
+<fieldset><legend> This is my form.  </legend>
+	<label for = "admin">Administrator</label> 
+		<input type = text name="admin" id="admin" placeholder="admin name" autofocus="on" autocomplete="on"></br>
+		<label for = "user">User Name</label> <input type = text name="user" id = "user"> </br>
+		<label for = "password">Password</label> <input type = password name="password" id = "password" required>
+
+		<input type = checkbox id = "checkbox" onclick="See()"> Click to see password </br>
+
+		<input type = checkbox id = "checkMail" >Check for mail<br><br>
+		<input type = submit>
+
+</fieldset>
+
+
+</form>
+
+</html>
