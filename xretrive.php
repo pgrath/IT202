@@ -52,6 +52,11 @@ while (   $r = mysql_fetch_array($t) )
 
 print "</table>";
 
+if (isset($_POST['mail'])){
+	echo "Mail copy has been checked";
+	
+}
+
 print "<br><br>End PHP";
 ?>
 
