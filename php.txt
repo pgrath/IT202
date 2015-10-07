@@ -64,7 +64,7 @@ if (isset($_POST['mail'])){
 	$to = "dotslash@mailinator.com";
 	$subject = "SQL email success";
 	
-//	mail($to, $subject, 'User = ';$user; 'email = ';$email);
+	mail($to, $subject, 'User = ';$user; 'email = ';$email);
 }
 else{
 	echo "Mail will not be sent."
