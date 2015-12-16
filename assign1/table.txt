@@ -1,0 +1,24 @@
+//grab the info for the table. styling set up top
+print "<table border=1>"; print"\n\r";
+print"<tr>Number of rows: ". mysql_num_rows ($t) . "</tr>"; print"\n\r";
+print "<tr> <td> User </td>	<td> Email </td>	<td> PWD </td>	</tr>"; print"\n\r";
+ 
+while (   $r = mysql_fetch_array($t) )
+{	//3. GET COLUMNS/CELLS OF ROW $r["---"]
+	$user = $r["user"];
+	$email = $r["email"];
+	$pwd  = $r["pwd"];
+	
+	//print the table
+	print"<tr>";
+	
+		print"<td>"	;	print $user	; 		print"</td>"	;	print"\n\r";
+		print"<td>"	;	print $email	; 		print"</td>"	; print"\n\r";
+		print"<td>"	;	print $pwd	; 		print"</td>"	; print"\n\r";
+	
+	
+	print"</tr>";
+	
+}
+
+print "</table>";

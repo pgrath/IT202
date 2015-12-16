@@ -14,10 +14,10 @@ include ("account.php");
 $dbh = mysql_connect ( $hostname, $username, $password )
 	                    or die ( "Unable to connect to MySQL database" );
 print "Connected to MySQL<br>";
-mysql_select_db( $project );
+mysql_select_db( $secret );
 
-$s="select * from registered";  
-print "<br>$s<br><br>";
+$s="select * from secret";  
+// print "<br>$s<br><br>";
 
 //1. GET results of select and store them in $t
 ( $t = mysql_query ( $s  ) ) or die ( mysql_error() );
@@ -26,34 +26,18 @@ print "<br>$s<br><br>";
 print "<br>";
 //2. GET the successive ROWS $r  in $t
 
-$pwd = "2qaz";
+//get text pass and sha1 it, to insert it into table
+$password = $_GET["password"];
+$ins = "insert into SECRET values sha1('$password')";
+mysql_query($ins);
 
 
-print "<table border=1>"; print"\n\r";
-print"<tr>Number of rows: ". mysql_num_rows ($t) . "</tr>"; print"\n\r";
-print "<tr> <td> User </td>	<td> Email </td>	<td> PWD </td>	</tr>"; print"\n\r";
- 
-while (   $r = mysql_fetch_array($t) )
-{	//3. GET COLUMNS/CELLS OF ROW $r["---"]
-	$user = $r["user"];
-	$email = $r["email"];
-	$pwd  = $r["pwd"];
-	
-	print"<tr>";
-	
-		print"<td>"	;	print $user	; 		print"</td>"	;	print"\n\r";
-		print"<td>"	;	print $email	; 		print"</td>"	; print"\n\r";
-		print"<td>"	;	print $pwd	; 		print"</td>"	; print"\n\r";
-	
-	
-	print"</tr>";
-	
-}
+//time to check password integrity
+$sel = "select * from SECRET where sha1('$password')=password";
+//run it 
+$r = mysql_query($sel) or die (mysql_error());
+	if(mysql_num_rows($r)==0) {die ("password not in DB");};
 
-print "</table>";
-
-$USR = $_POST['user'];
-echo "Select * from registered"
 
 if (isset($_POST['mail'])){
 	$x = mysql_fetch_array($t);

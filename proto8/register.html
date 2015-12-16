@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<style>
+fieldset {width: 60%; margin: auto; }
+
+label { float: left; width: 7em; background: yellow;}
+
+/* input {color: red;} */
+</style>
+
+<html>
+
+<script>
+	function pwcheck(){
+		if(document.getElementById('userPass').value != document.getElementById('chkuserPass').value){
+			//possibily use alret instead, my not be needed
+			document.getElementById('chkuserPass').value = "";
+			document.getElementById('userPass').focus();
+			document.getElementById('usrNotify').innerHTML = "Passwords do not match.";
+		}
+		else{
+			document.getElementById('usrNotify').innerHTML = "";
+		}
+	}
+	
+	function See(){
+
+	if (document.getElementById("checkbox").checked){
+	document.getElementById("userPass").type = "text";
+	}
+	
+	if (!document.getElementById("checkbox").checked){
+	document.getElementById("userPass").type = "password";
+	}
+}
+</script>
+
+<form  action = "register.php" >
+	
+	<fieldset><legend>Register here </legend>
+	<label for "user">User name </label>	<input type=text name="user" id="user" required autofocus=on><br>
+	<!--these 2 fields will be checked aganist each other for a correct pass -->
+	<label for "userPass">Password </label><input type=password name="userPass" id="userPass" autocomplete=off > <input type = checkbox id = "checkbox" onclick="See()"> Click to see password<br>
+	<label for "chkuserPass">Confirm Password </label><input type=password name="chkuserPass" id="chkuserPass"	autocomplete=off required onblur="pwcheck()">
+	<span id="usrNotify" style="color:red"> </span>
+	<br><br><br>
+	<!-- used to warn the user of an incorrect pw -->
+	<span id="usrNotify"> </span>
+
+	<label for "email">Email </label><input type=text name="email" id="email">
+	<input type=checkbox name="sendEmail" id="sendEmail" > Check for mail copy
+	<br><br>
+	<label for "fullname">Full name </label><input type=text name="fullname" id="fullname"><br>
+
+	<label for "address">Address </label><input type=textarea name="address" id="address">
+	<br><br>
+	<label for "cell">Cell </label><input type=text name="cell" id="cell">
+	<br><br>
+	<label for "major">Student Major:</label><input type=text name="major" id="major">
+
+	<br>
+	<input type=submit>
+
+	</fieldset>
+</form>
+
+</html>

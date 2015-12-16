@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+  <br>Welcome to chat</br>
+
+<script type="text/Javascript">
+
+function createRequestObject(){
+		var ro;
+		var browser = navigator.appName;
+		if(browser == "MicrosoftInternetExplorer"){
+			ro = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		else{
+			ro = new XMLHttpRequest();
+		}
+		return ro;}
+
+	var http = createRequestObject();
+
+	function sndReq(){
+		mesg = document.getElementById("N1").value
+		user = document.getElementById("user").value
+		pwd = document.getElementById("pwd").value
+
+		http.open('get', 'lookup.php?user=' +user+ "&pwd=" +pwd+ "&chatMsg=" +mesg+"&junk="+Math.random() );
+
+		http.onreadystatechange = handleResponse;
+		http.send(null);
+	}
+/* dont need this now
+     function handleResponse(){
+		if(http.readyState == 4) // Results downloaded to browser
+		{
+			var response = http.responseText;
+			document.getElementById("N1").value = "Sent" + response
+		}
+	} */
+
+	function getMsg(){
+		user2Val = document.getElementById("user2").value
+
+		http.open('get', 'get.php?user2=' +user2Val+ "&junk="+Math.random() );
+
+		http.onreadystatechange = handleResponse2;
+		http.send(null);
+	}
+
+	function handleResponse2(){
+		if(http.readyState == 4){ // Results downloaded to browser
+
+			var msgResp = http.responseText;
+			document.getElementById("N3").innerHTML = msgResp
+		}
+	}
+
+  function addUsr(){
+    usrName = document.getElementById("addName").value
+    usrPass = document.getElementById("addPass").value
+
+    http.open('get', 'usrAdd.php?addName='+usrName+"&addPass="+usrPass+"&junk="+Math.random());
+    http.onreadystatechange = handleAdd;
+    http.send(null)
+  }
+
+  function handleAdd(){
+    if(http.readyState == 4){
+      var mesgResp = http.responseText;
+
+      document.getElementById("N4").innerHTML = "Success"
+    }
+
+  }
+
+	function handleResponse(){
+		if(http.readyState == 4){// Results downloaded to browser
+
+			var response = http.responseText;
+
+			document.getElementById("N2").innerHTML = response
+		}
+	}
+  function getName(){
+    names = document.getElementById("user").value
+
+    http.open('get', 'getNames.php?user='+names+"&junk="+Math.random());
+    http.onreadystatechange = handleGetName;
+    http.send(null)
+
+  }
+  function handleGetName(){
+    if(http.readyState == 4){
+      var resp = http.responseText;
+
+      document.getElementById("namesInChat").innerHTML = resp
+    }
+  }
+
+</script>
+  <html>
+  <br>
+  Input your account info: <br>
+  Users in chat:<br>
+  <div id="namesInChat"></div><br>
+
+	<input type=text name="user" id="user" placeholder="user" onkeyup="getName()" required  >
+	<br>
+	<input type=password name="pwd" id="pwd" value="" placeholder="password" required >
+	<br>
+    <p>Enter message:</p>
+		<textarea name="textarea" placeholder="" id="N1"  rows=2 cols=20 onkeyup="sndReq()" > </textarea>
+  <br><br><br>
+
+<div id="N2" ></div>
+<br><br><br>
+
+Listen to a user:	<input type=text name="user2" id="user2" title="Enter username to listen" >
+	<input type=button onclick="getMsg()" value="Recieve" id="button2" > <br><br>
+<div id="N3"  ></div><br>
+
+<br><br><br><br>
+  <!--add a user, save this for later -->
+
+<p>still messed up for now</p>
+  <p>Add a user</p>
+  <form >
+
+  <input type=text id="addName" name="addName" placeholder="Enter name" autocomplete="off"  >
+  <br>
+  <input type=password id="addPass" name="addPass"  placeholder="Enter password" autocomplete="off"  >
+  <br>
+
+  <input type = submit onclick="addUsr()" value="Add user">
+  <div id="N4 "></div>
+
+  </form>
+
+<br>
+<a href="getphp.txt">Get.Php text</a><br>
+<a href="lookupphp.txt">Lookup.php text</a><br>
+<a href="usraddphp.txt">Usradd.php text</a><br>
+<a href="getnamesphp.txt">getNames.php text</a><br>
+<a href="a4statement.txt">Statement</a><br>
+
+
+  </html>

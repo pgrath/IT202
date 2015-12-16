@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70e4a755-733e-4827-8217-a0398e34c054" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assign1/assign1.html" afterPath="$PROJECT_DIR$/assign1/assign1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assign1/assign1.php" afterPath="$PROJECT_DIR$/assign1/assign1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assign1/statement.html" afterPath="$PROJECT_DIR$/assign1/statement.html" />
+      <change type="DELETED" beforePath="C:\Users\Pat\Documents\it202\IT202\assign1\assign1-php.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Pat\Documents\it202\IT202\assign1\assign1.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Pat\Documents\it202\IT202\assign1\assign1.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IT202.iws" />
@@ -27,16 +27,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="assign1.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assign1/assign1.php">
+      <file leaf-file-name="retrive.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assign1/retrive.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35274357">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.3325868">
+              <caret line="94" column="1" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
               <folding>
-                <marker date="1444686697315" expanded="true" signature="404:428" placeholder="select * fro..registered..." />
-                <marker date="1444686697315" expanded="true" signature="442:462" placeholder="select * fro..grades..." />
-                <marker date="1444686697315" expanded="true" signature="2115:2139" placeholder="Select * fro..registered..." />
+                <marker date="1444708799654" expanded="true" signature="404:428" placeholder="select * fro..registered..." />
+                <marker date="1444708799654" expanded="true" signature="442:462" placeholder="select * fro..grades..." />
+                <marker date="1444708799654" expanded="true" signature="1278:2349" placeholder="..." />
+                <marker date="1444708799654" expanded="true" signature="1765:2326" placeholder="..." />
+                <marker date="1444708799654" expanded="true" signature="2732:2766" placeholder="select * fro..grades..." />
+                <marker date="1444708799654" expanded="true" signature="2916:3987" placeholder="..." />
+                <marker date="1444708799654" expanded="true" signature="3403:3964" placeholder="..." />
+                <marker date="1444708799654" expanded="true" signature="4317:4351" placeholder="select * fro..grades..." />
+                <marker date="1444708799654" expanded="true" signature="4502:5573" placeholder="..." />
+                <marker date="1444708799654" expanded="true" signature="4989:5550" placeholder="..." />
+                <marker date="1444708799654" expanded="true" signature="5869:5893" placeholder="Select * fro..registered..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="retrive.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assign1/retrive.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,6 +69,7 @@
       <list>
         <option value="$PROJECT_DIR$/xretrive.php" />
         <option value="$PROJECT_DIR$/assign1/assign1.php" />
+        <option value="$PROJECT_DIR$/assign1/retrive.php" />
       </list>
     </option>
   </component>
@@ -137,6 +156,34 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
     <configuration />
@@ -190,14 +237,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xretrive.php">
+    <entry file="file://$PROJECT_DIR$/assign1/retrive.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1444193244497" expanded="true" signature="-1:-1" placeholder="select * fro..registered..." />
-            <marker date="1444193244497" expanded="true" signature="-1:-1" placeholder="Select * fro..registered..." />
+            <marker date="1444708799654" expanded="true" signature="404:428" placeholder="select * fro..registered..." />
+            <marker date="1444708799654" expanded="true" signature="442:462" placeholder="select * fro..grades..." />
+            <marker date="1444708799654" expanded="true" signature="1278:2349" placeholder="..." />
+            <marker date="1444708799654" expanded="true" signature="1765:2326" placeholder="..." />
+            <marker date="1444708799654" expanded="true" signature="2732:2766" placeholder="select * fro..grades..." />
+            <marker date="1444708799654" expanded="true" signature="2916:3987" placeholder="..." />
+            <marker date="1444708799654" expanded="true" signature="3403:3964" placeholder="..." />
+            <marker date="1444708799654" expanded="true" signature="4317:4351" placeholder="select * fro..grades..." />
+            <marker date="1444708799654" expanded="true" signature="4502:5573" placeholder="..." />
+            <marker date="1444708799654" expanded="true" signature="4989:5550" placeholder="..." />
+            <marker date="1444708799654" expanded="true" signature="5869:5893" placeholder="Select * fro..registered..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assign1/retrive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xretrive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -205,7 +276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -213,10 +283,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6953405">
           <caret line="66" column="2" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="2" />
-          <folding>
-            <marker date="1444193244497" expanded="true" signature="-1:-1" placeholder="select * fro..registered..." />
-            <marker date="1444193244497" expanded="true" signature="-1:-1" placeholder="Select * fro..registered..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -224,18 +290,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assign1/retrive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assign1/assign1.php">
+    <entry file="file://$PROJECT_DIR$/assign1/retrive.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35274357">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3325868">
+          <caret line="94" column="1" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
           <folding>
-            <marker date="1444686697315" expanded="true" signature="404:428" placeholder="select * fro..registered..." />
-            <marker date="1444686697315" expanded="true" signature="442:462" placeholder="select * fro..grades..." />
-            <marker date="1444686697315" expanded="true" signature="2115:2139" placeholder="Select * fro..registered..." />
+            <marker date="1444708799654" expanded="true" signature="404:428" placeholder="select * fro..registered..." />
+            <marker date="1444708799654" expanded="true" signature="442:462" placeholder="select * fro..grades..." />
+            <marker date="1444708799654" expanded="true" signature="1278:2349" placeholder="..." />
+            <marker date="1444708799654" expanded="true" signature="1765:2326" placeholder="..." />
+            <marker date="1444708799654" expanded="true" signature="2732:2766" placeholder="select * fro..grades..." />
+            <marker date="1444708799654" expanded="true" signature="2916:3987" placeholder="..." />
+            <marker date="1444708799654" expanded="true" signature="3403:3964" placeholder="..." />
+            <marker date="1444708799654" expanded="true" signature="4317:4351" placeholder="select * fro..grades..." />
+            <marker date="1444708799654" expanded="true" signature="4502:5573" placeholder="..." />
+            <marker date="1444708799654" expanded="true" signature="4989:5550" placeholder="..." />
+            <marker date="1444708799654" expanded="true" signature="5869:5893" placeholder="Select * fro..registered..." />
           </folding>
         </state>
       </provider>

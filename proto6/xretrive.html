@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<style>
+fieldset {width: 60%; margin: auto; }
+
+label { float: left; width: 7em; background: yellow;}
+
+/* input {color: red;} */
+</style>
+
+<link rel="stylesheet" href="x.css">
+<html>
+
+<script>
+function See(){
+
+	if (document.getElementById("checkbox").checked){
+	document.getElementById("password").type = "text";
+	}
+	
+	if (!document.getElementById("checkbox").checked){
+	document.getElementById("password").type = "password";
+	}
+}
+
+</script>
+
+
+<form action = "register.php" >
+
+<fieldset><legend> Register </legend>
+			
+		<label for = "user">User Name</label> <input type = text name="user" id = "user" autofocus="on" autocomplete="on"> </br>
+		<label for = "password">Password</label> <input type = password name="password" id = "password" required>
+		<input type = checkbox id = "checkbox" onclick="See()"> Click to see password </br>
+		<label for = "cpassword">Confirm Password</label> <input type = password name="cpassword" id = "cpassword" required></br>
+		<label for = "email">Email</label> <input type = text name="email" id = "email"> </br>
+		<label for = "fullname">Full Name</label> <input type = text name="fullname" id = "fullname"> </br>
+		<label for = "address">Address</label><textarea name="address" rows="5" cols="50"></textarea> </br>
+		<label for = "cell">Cell</label><input type = text name="cwll" id = "cell"> </br>
+		<label for = "major">Major</label><input type = text name="major" id = "major"> </br>
+
+		<input type = checkbox id = "checkMail" name = "mail" >Check for mail<br><br>
+		<input type = submit><br>
+		
+		<a href="statement.html">Statemnt link.</a>
+		<a href="php.txt">Link to php file.</a>
+
+</fieldset>
+
+
+</form>
+
+</html>
